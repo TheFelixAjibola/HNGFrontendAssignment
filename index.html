@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Frontend Stage One Assignment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <header class="pHeader">
+          <img
+            src="assets/img/passport.jpg"
+            alt="Felix Ajibola"
+            data-testid="slackDisplayImage"
+            class="pImage"
+          />
+
+          <div class="slackUserName">
+            <h3 data-testid="slackUserName">FELIX AJIBOLA</h3>
+          </div>
+        </header>
+      </div>
+
+      <div class="date">
+        <p data-testid="currentDayOfTheWeek">
+          <span class="title">Day of the Week:</span>
+          <span class="currentDayOfTheWeek"></span>
+        </p>
+        <p class="currentUTCTime" data-testid="currentUTCTime">
+          <span class="title">UTC Time (Nigerian Time):</span>
+          <span class="currentUTCHours"></span> <span>:</span>
+          <span class="currentUTCMinutes"></span> <span>:</span>
+          <span class="currentUTCSeconds"></span> <span>:</span>
+          <span class="currentUTCMilliseconds"></span>
+        </p>
+      </div>
+
+      <div class="trackGit">
+        <p data-testid="myTrack" class="myTrack">
+          <span class="title"> Track: </span>
+          <span>Frontend Developer</span>
+        </p>
+        <p>
+          <span class="title"> Github Url:</span>
+          <a
+            class="link"
+            href="https://github.com/TheFelixAjibola/HNGFrontendAssignment"
+            data-testid="githubURL"
+          >
+            Click Here for my Stage One Assignment
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
