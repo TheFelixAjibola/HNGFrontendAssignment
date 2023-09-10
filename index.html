@@ -10,46 +10,42 @@
     <div class="container">
       <div class="profile">
         <header class="pHeader">
+          <div class="name">
+            <h1 data-testid="slackUserName">FELIX AJIBOLA</h1>
+          </div>
           <img
             src="assets/img/passport.jpg"
             alt="Felix Ajibola"
             data-testid="slackDisplayImage"
             class="pImage"
           />
-
-          <div class="slackUserName">
-            <h3 data-testid="slackUserName">FELIX AJIBOLA</h3>
-          </div>
         </header>
       </div>
 
       <div class="date">
-        <p data-testid="currentDayOfTheWeek">
+        <p class="para">
           <span class="title">Day of the Week:</span>
-          <span class="currentDayOfTheWeek"></span>
+          <span class="day_of_week" data-testid="currentDayOfTheWeek"></span>
         </p>
-        <p class="currentUTCTime" data-testid="currentUTCTime">
-          <span class="title">UTC Time (Nigerian Time):</span>
-          <span class="currentUTCHours"></span> <span>:</span>
-          <span class="currentUTCMinutes"></span> <span>:</span>
-          <span class="currentUTCSeconds"></span> <span>:</span>
-          <span class="currentUTCMilliseconds"></span>
+        <p class="para" data-testid="currentUTCTime">
+          <span class="title">UTC Time:</span>
+          <span class="time_of_the_week" data-testid="currentUTCTime"></span>
         </p>
       </div>
 
       <div class="trackGit">
-        <p data-testid="myTrack" class="myTrack">
+        <p data-testid="myTrack" class="para">
           <span class="title"> Track: </span>
           <span>Frontend Developer</span>
         </p>
-        <p>
-          <span class="title"> Github Url:</span>
+        <p class="para">
+          <span class="title"> Github:</span>
           <a
             class="link"
             href="https://github.com/TheFelixAjibola/HNGFrontendAssignment"
             data-testid="githubURL"
           >
-            Click Here for my Stage One Assignment
+            Click Here to see my Stage One Assignment on Github
           </a>
         </p>
       </div>

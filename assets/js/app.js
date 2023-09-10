@@ -1,12 +1,8 @@
 function today() {
   // HTML Classes
-  let day = document.querySelector(".currentDayOfTheWeek");
-  let hours = document.querySelector(".currentUTCHours");
-  let minutes = document.querySelector(".currentUTCMinutes");
-  let seconds = document.querySelector(".currentUTCSeconds");
-  let miliseconds = document.querySelector(".currentUTCMilliseconds");
+  const day = document.querySelector(".day_of_week");
+  const UTC = document.querySelector(".time_of_the_week");
 
-  const currentDate = new Date();
   const dOW = [
     "Sunday",
     "Monday",
@@ -17,18 +13,15 @@ function today() {
     "Saturday",
   ];
 
-  const currentDay = dOW[currentDate.getDay()];
-  const currentUTCHours = currentDate.getUTCHours();
-  const currentUTCMInutes = currentDate.getUTCMinutes();
-  const currentUTCSeconds = currentDate.getUTCSeconds();
-  const currentUTCMilliseconds = currentDate.getUTCMilliseconds();
+  const currentTimeMiliseconds = Date.now();
+  const currentDate = new Date();
+  const currentdOW = dOW[currentDate.getDay()];
+
+  const currentTime = currentTimeMiliseconds;
 
   // DOM Manipulation
-  day.innerHTML = currentDay;
-  hours.innerHTML = currentUTCHours + 1;
-  minutes.innerHTML = currentUTCMInutes;
-  seconds.innerHTML = currentUTCSeconds;
-  miliseconds.innerHTML = currentUTCMilliseconds;
+  day.textContent = currentdOW;
+  UTC.textContent = currentTime;
 }
 
 today();
