@@ -102,7 +102,7 @@ a:visited {
     align-items: center;
     justify-content: center;
     margin: 20px;
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
   .date,
@@ -111,5 +111,16 @@ a:visited {
     margin: 20px 2px 20px 2px;
     padding: auto;
     display: flex;
+  }
+}
+
+@media (max-width: 625px) {
+  .date,
+  .trackGit {
+    width: 312.5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: auto;
+    display: grid;
   }
 }
